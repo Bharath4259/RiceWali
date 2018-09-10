@@ -24,4 +24,17 @@ Some basic Git commands are:
 ## Tasks / work in progress
 - [ ] Delete all unecessry files after using them
 - [ ] Finish all UI part untill 15th sep
-- [ ] 
+- [ ] login.html edited, need to adjust heading.
+
+
+## Activity
+- Files to keep
+    - events.html
+    - about.html
+    - kitchen.html
+    - services.html
+    - faqs.html
+    - payment.html
+    - checkout.html
+    - mail.html
+- login.html edited, need to adjust heading.
