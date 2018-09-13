@@ -1,54 +1,53 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
-<!-- //font-awesome icons -->
-<!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script>
-<!-- //js -->
- <script src='js/okzoom.js'></script>
-  <script>
-    $(function(){
-      $('#example').okzoom({
-        width: 150,
-        height: 150,
-        border: "1px solid black",
-        shadow: "0 0 5px #000"
-      });
-    });
-  </script>
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+	<!-- //for-mobile-apps -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- font-awesome icons -->
+	<link href="static/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- js -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="render.js"></script>
+	<script src="js/single_product.js"></script>
+	<script src='js/okzoom.js'></script>
+	<script>
+		$(function () {
+			$('#example').okzoom({
+				width: 150,
+				height: 150,
+				border: "1px solid black",
+				shadow: "0 0 5px #000"
+			});
 		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
+	</script>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		var data;
+		window.onpaint = function () {
+			console.log("-> ", render_data)
+		}
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
 </head>
-	
+
 <body>
 	<!-- header -->
 	<div class="agileits_header">
@@ -87,7 +86,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					$(".agileits_header").removeClass("fixed");
 				}
 			});
-
 		});
 	</script>
 	<!-- //script-for sticky-nav -->
@@ -123,8 +121,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
-<!-- //header -->
-<!-- products-breadcrumb -->
+	<!-- //header -->
+	<!-- products-breadcrumb -->
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
@@ -133,59 +131,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</ul>
 		</div>
 	</div>
-<!-- //products-breadcrumb -->
-<!-- banner -->
+	<!-- //products-breadcrumb -->
+	<!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
-					<nav class="navbar nav_bottom">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header nav_2">
-							<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-							<ul class="nav navbar-nav nav_1">
-		
-								<li class="dropdown mega-dropdown active">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
-									<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-										<div class="w3ls_vegetables">
-											<ul class="nav-dropdown">
-												<li><a href="">Basmati Rice</a></li>
-												<li><a href="">Boiled Rice</a></li>
-												<li><a href="">BPT</a></li>
-												<li><a href="">Broken Rice</a></li>
-												<li><a href="">Brown Rice</a></li>
-												<li><a href="">HMT Rice</a></li>
-												<li><a href="">Jai Srhiram Rice</a></li>
-												<li><a href="">Korra Rice</a></li>
-												<li><a href="">Kurnool Sona MAsuri</a></li>
-												<li><a href="">Steam Rice</a></li>
-												<li><a href="">White Ponni</a></li>
-											</ul>
-										</div>
-									</div>
-								</li>
-								<li><a href="">Try A Sample</a></li>
-								<li><a href="">Why US?</a></li>
-								<li><a href="">Contact US</a></li>
-							</ul>
-						</div><!-- /.navbar-collapse -->
-					</nav>
+			<nav class="navbar nav_bottom">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header nav_2">
+					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav nav_1">
+
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul class="nav-dropdown">
+										<li><a href="">Basmati Rice</a></li>
+										<li><a href="">Boiled Rice</a></li>
+										<li><a href="">BPT</a></li>
+										<li><a href="">Broken Rice</a></li>
+										<li><a href="">Brown Rice</a></li>
+										<li><a href="">HMT Rice</a></li>
+										<li><a href="">Jai Srhiram Rice</a></li>
+										<li><a href="">Korra Rice</a></li>
+										<li><a href="">Kurnool Sona MAsuri</a></li>
+										<li><a href="">Steam Rice</a></li>
+										<li><a href="">White Ponni</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="">Try A Sample</a></li>
+						<li><a href="">Why US?</a></li>
+						<li><a href="">Contact US</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
 			<!-- <div class="w3l_banner_nav_right_banner3">
 				<h3>Best Deals For New Products<span class="blink_me"></span></h3>
 			</div> -->
 			<div class="agileinfo_single">
-				<h5>Basmati Rice</h5>
+				<h5 id="p_title"></h5>
 				<div class="col-md-4 agileinfo_single_left">
-					<img id="example" src="images/76.png" alt=" " class="img-responsive" />
+					<img id="p_img" src="images/76.png" alt=" " class="img-responsive" />
 				</div>
 				<div class="col-md-8 agileinfo_single_right">
 					<div class="rating1">
@@ -204,15 +202,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="w3agile_description">
 						<h4>Description :</h4>
-						<p>Basmati is a variety of long, slender-grained aromatic
-							 rice which is traditionally from the Indian subcontinent.
-							 These long and slender grains are known for their distinct aroma and are native to the Indian subcontinent. 
-							 It is commonly used for making royal biryanis but there's a lot more that you can do with Basmati rice.
-							 If you haven't experimented with it yet, here are our 10 best Basmati rice recipes to try.</p>
+						<p id="p_desc">Basmati is a variety of long, slender-grained aromatic rice which is traditionally from the Indian subcontinent.
+							These long and slender grains are known for their distinct aroma and are native to the Indian subcontinent. It is
+							commonly used for making royal biryanis but there's a lot more that you can do with Basmati rice. If you haven't experimented
+							with it yet, here are our 10 best Basmati rice recipes to try.</p>
 					</div>
 					<div class="snipcart-item block">
 						<div class="snipcart-thumb agileinfo_single_right_snipcart">
-							<h4>₹1500 <span>₹1800</span></h4>
+							<h4 id="p_price">₹1500 <span>₹1800</span></h4>
 						</div>
 						<div class="snipcart-details agileinfo_single_right_details">
 							<form action="#" method="post">
@@ -237,22 +234,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="clearfix"></div>
 	</div>
-<!-- //banner -->
-<!-- More -->
-<div class="fresh-vegetables">
+	<!-- //banner -->
+	<!-- More -->
+	<div class="fresh-vegetables">
 		<div class="container">
-			<h3>more about basmati</h3>
+			<h3 id="p_abt_ttle">more about basmati</h3>
 			<div class="w3l_fresh_vegetables_grids">
 				<div class="col-md-3 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
 					<div class="w3l_fresh_vegetables_grid2">
-						<ul>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="">Suitable for Biryani</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="">High calorific value</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Carbohydrates and protiens</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Lower in Fat and Gluten</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="drinks.html">Rich Source of Vitamins</a></li>
-							<li><i class="fa fa-check" aria-hidden="true"></i><a href="pet.html">Iron is another important nutrient that basmati rice adds to one’s diet</a></li>
-						</ul>
+						<!-- specifications -->
+						<ul id="p_specs"> </ul>
 					</div>
 				</div>
 				<div class="col-md-9 w3l_fresh_vegetables_grid_right">
@@ -292,23 +283,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="agileinfo_marquee">
 							<h4>get <span class="blink_me">Discount</span> on bulk orders</h4>
 						</div>
-						<!-- <div class="agileinfo_breaking_news">
-							<span> </span>
-						</div> -->
 					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-<!-- brands -->
+	<!-- brands -->
 	<div class="w3ls_w3l_banner_nav_right_grid w3ls_w3l_banner_nav_right_grid_popular">
 		<div class="container">
 			<h3>Popular Brands</h3>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
-					<h6>Basmati Brands</h6>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
+			<div class="w3ls_w3l_banner_nav_right_grid1">
+				<h6>Basmati Brands</h6>
+				<div class="col-md-3 w3ls_w3l_banner_left">
+					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
 							<div class="agile_top_brand_left_grid_pos">
 								<img src="images/offer.png" alt=" " class="img-responsive" />
@@ -341,10 +329,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</figure>
 							</div>
 						</div>
-						</div>
 					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
+				</div>
+				<div class="col-md-3 w3ls_w3l_banner_left">
+					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
 							<div class="agile_top_brand_left_grid_pos">
 								<img src="images/offer.png" alt=" " class="img-responsive" />
@@ -377,10 +365,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</figure>
 							</div>
 						</div>
-						</div>
 					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
+				</div>
+				<div class="col-md-3 w3ls_w3l_banner_left">
+					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
 							<div class="agile_top_brand_left_grid_pos">
 								<img src="images/offer.png" alt=" " class="img-responsive" />
@@ -413,10 +401,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</figure>
 							</div>
 						</div>
-						</div>
 					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
+				</div>
+				<div class="col-md-3 w3ls_w3l_banner_left">
+					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
 							<div class="agile_top_brand_left_grid_pos">
 								<img src="images/offer.png" alt=" " class="img-responsive" />
@@ -449,18 +437,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</figure>
 							</div>
 						</div>
-						</div>
 					</div>
-					<div class="clearfix"> </div>
 				</div>
+				<div class="clearfix"> </div>
+			</div>
 		</div>
 	</div>
-<!-- //brands -->
-<!-- newsletter -->
+	<!-- //brands -->
+	<!-- newsletter -->
 	<div class="newsletter">
 		<div class="container">
 			<div class="w3agile_newsletter_left">
-				<h3>Request a call back</h3>
+				<h3> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Request a call back</h3>
 			</div>
 			<div class="w3agile_newsletter_right">
 				<form action="#" method="post">
@@ -471,10 +459,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-<!-- //newsletter -->
-<!-- footer -->
-
-<div class="footer">
+	<!-- //newsletter -->
+	<!-- footer -->
+	<div class="footer">
 		<div class="container">
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
@@ -495,9 +482,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 w3_footer_grid">
 				<h3>what we are into</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="pet.html">Rice for hostels</a></li>
-					<li><a href="frozen.html">Bulk orders</a></li>
-					<li><a href="kitchen.html">Best quality rice for hotels</a></li>
+					<li><a>Rice for hostels</a></li>
+					<li><a>Bulk orders</a></li>
+					<li><a>Best quality rice for hotels</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>connect with us</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i> ricewali | Facebook.com</a></li>
+					<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i> ricewali | Twitter</a></li>
+					<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i> ricewali | Google+</a></li>
+					<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> ricewali | instagram</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -505,45 +501,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
 					<div class="w3_footer_grid_bottom">
 						<h4>100% secure payments</h4>
-						<img src="images/card.png" alt=" " class="img-responsive" />
-					</div>
-				</div>
-				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
-					<div class="w3_footer_grid_bottom">
-						<h5>connect with us</h5>
 						<ul class="agileits_social_icons">
-							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+							<li><a class="facebook"><i class="fa fa-paypal" aria-hidden="true"></i></a></li>
+							<li><a class="twitter"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
+							<li><a class="google"><i class="fa fa-google-wallet" aria-hidden="true"></i></a></li>
+							<li><a class="instagram"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a></li>
+							<li><a class="dribbble"><i class="fa fa-credit-card" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-	</div>	
-<!-- //footer -->
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-    $(".dropdown").hover(            
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');        
-        },
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-            $(this).toggleClass('open');       
-        }
-    );
-});
-</script>
-<!-- here stars scrolling icon -->
+	</div>
+	<!-- //footer -->
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".dropdown").hover(
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
+					$(this).toggleClass('open');
+				},
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
+					$(this).toggleClass('open');
+				}
+			);
+		});
+	</script>
+	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
-		$(document).ready(function() {
+		$(document).ready(function () {
 			/*
 				var defaults = {
 				containerID: 'toTop', // fading element id
@@ -552,14 +542,14 @@ $(document).ready(function(){
 				easingType: 'linear' 
 				};
 			*/
-								
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
+
+		});
 	</script>
-<!-- //here ends scrolling icon -->
-<script src="js/minicart.js"></script>
-<script>
+	<!-- //here ends scrolling icon -->
+	<script src="js/minicart.js"></script>
+	<script>
 		paypal.minicart.render();
 
 		paypal.minicart.cart.on('checkout', function (evt) {
@@ -581,4 +571,5 @@ $(document).ready(function(){
 
 	</script>
 </body>
+
 </html>
