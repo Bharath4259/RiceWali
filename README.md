@@ -23,9 +23,12 @@ Some basic Git commands are:
 
 ## Tasks / work in progress
 - [ ] Delete all unecessry files after using them
-- [ ] Finish all UI part untill 15th sep
 - [ ] login.html edited, need to adjust heading.
-
+- [ ] Render Header & Footer from a template
+- [ ] Need to Update Terms n Conditions
+- [ ] Create seperate file for t&c 
+- [ ] Logo need to be added in header
+- [ ] Connect site with sheets 
 
 ## Activity
 - Files to keep
