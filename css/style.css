@@ -168,7 +168,6 @@ ul.dropdown-menu.drp-mnu li a i {
     text-decoration: none;
     text-transform: uppercase;
     display: block;
-    background: url(../images/img-sp.png) no-repeat 54px 6px;
     line-height: 1;
     height: 97px;
 }
@@ -3208,8 +3207,8 @@ input.checkbox:checked:after {
 		margin: .1em 0 0em 2em;
 	}
 	.w3ls_logo_products_left h1 a {
+		margin-top: 0px;
 		font-size: 1.2em;
-		background: url(../images/img-sp.png) no-repeat 38px -9px;
 		height: 83px;
 	}
 	.w3ls_logo_products_left1 ul.phone_email li {

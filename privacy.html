@@ -41,155 +41,346 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
-	<!-- header -->
-	<div class="logo_products">
-		<div class="container">
-			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html"><span>Grocery</span> Store</a></h1>
+		<!-- header -->
+		<div class="agileits_header">
+			<div class="w3l_offers">
+				<a href="index.html">RiceWali</a>
 			</div>
-			<div class="w3ls_logo_products_left1">
-				<ul class="special_items">
-					<li><a href="events.html">Events</a><i>/</i></li>
-					<li><a href="about.html">About Us</a><i>/</i></li>
-					<li><a href="products.html">Best Deals</a><i>/</i></li>
-					<li><a href="services.html">Services</a></li>
-				</ul>
-			</div>
-			<div class="w3ls_logo_products_left1">
-				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">store@grocery.com</a></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!-- //header -->
-	<!-- products-breadcrumb -->
-	<div class="products-breadcrumb">
-		<div class="container">
-			<ul>
-				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>Privacy Policy & Terms of Use</li>
-			</ul>
-		</div>
-	</div>
-	<!-- //products-breadcrumb -->
-	<!-- banner -->
-	<div class="banner">
-		<div class="w3l_banner_nav_left">
-			<nav class="navbar nav_bottom">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header nav_2">
-					<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+			<div class="w3l_header_right1 px-5">
+				<div class="dropdown profile_details_drop">
+					<a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu">
+								<li><a href="login.html">Login</a></li>
+								<li><a href="login.html">Sign Up</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-					<ul class="nav navbar-nav nav_1">
-						<li><a href="products.html">Branded Foods</a></li>
-						<li><a href="household.html">Households</a></li>
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>
-										<li><a href="vegetables.html">Vegetables</a></li>
-										<li><a href="vegetables.html">Fruits</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li><a href="kitchen.html">Kitchen</a></li>
-						<li><a href="short-codes.html">Short Codes</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>
-										<li><a href="drinks.html">Soft Drinks</a></li>
-										<li><a href="drinks.html">Juices</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li><a href="pet.html">Pet Food</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>
-										<li><a href="frozen.html">Frozen Snacks</a></li>
-										<li><a href="frozen.html">Frozen Nonveg</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li><a href="bread.html">Bread & Bakery</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</nav>
+			</div>
+			<div class="w3l_header_right1 px-5">
+				<div class="dropdown profile_details_drop">
+					<a href="checkout.html"><i class='fa fa-shopping-cart' aria-hidden='true'></i></a>
+				</div>
+			</div>
 		</div>
+	
+		<!-- script-for sticky-nav -->
+		<script>
+			$(document).ready(function () {
+				var navoffeset = $(".agileits_header").offset().top;
+				$(window).scroll(function () {
+					var scrollpos = $(window).scrollTop();
+					if (scrollpos >= navoffeset) {
+						$(".agileits_header").addClass("fixed");
+					} else {
+						$(".agileits_header").removeClass("fixed");
+					}
+				});
+			});
+		</script>
+		<!-- //script-for sticky-nav -->
+	
+		<div class="logo_products">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-3 col-md-3 col-xl-3">
+						<div class="w3ls_logo_products_left">
+							<h1><a href="index.html">RiceWal!</a></h1>
+						</div>
+					</div>
+					<div class="col-5 col-md-5 col-xl-5">
+						<div class="w3ls_logo_products_left1">
+							<ul class="special_items">
+								<li><a href="products.html">Best Deals</a><i>/</i></li>
+								<li><a href="about.html">About Us</a><i>/</i></li>
+								<li><a href="services.html">Services</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-4 col-md-4 col-xl-4">
+						<div class="w3ls_logo_products_left1">
+							<ul class="phone_email">
+								<li><i class="fa fa-phone" aria-hidden="true"></i>(+91) 912 345 6789</li>
+								<li><i class="fa fa-envelope-o" aria-hidden="true"></i>
+									<a href="services@ricewali.com"> services@ricewali.com </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //header -->
+		<!-- products-breadcrumb -->
+		<div class="products-breadcrumb">
+			<div class="container">
+				<ul>
+					<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+					<li>Privacy Policy</li>	
+				</ul>
+			</div>
+		</div>
+		<!-- //products-breadcrumb -->
+		<!-- banner -->
+		<div class="banner">
+			<div class="w3l_banner_nav_left">
+				<nav class="navbar nav_bottom">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header nav_2">
+						<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+						<ul class="nav navbar-nav nav_1">
+	
+							<li class="dropdown mega-dropdown active">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+								<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+									<div class="w3ls_vegetables">
+										<ul class="nav-dropdown">
+											<li><a href="">Basmati Rice</a></li>
+											<li><a href="">Boiled Rice</a></li>
+											<li><a href="">BPT</a></li>
+											<li><a href="">Broken Rice</a></li>
+											<li><a href="">Brown Rice</a></li>
+											<li><a href="">HMT Rice</a></li>
+											<li><a href="">Jai Srhiram Rice</a></li>
+											<li><a href="">Korra Rice</a></li>
+											<li><a href="">Kurnool Sona MAsuri</a></li>
+											<li><a href="">Steam Rice</a></li>
+											<li><a href="">White Ponni</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li><a href="">Try A Sample</a></li>
+							<li><a href="">Why US?</a></li>
+							<li><a href="">Contact US</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
 		<div class="w3l_banner_nav_right">
 			<!-- privacy -->
 			<div class="privacy">
 				<div class="privacy1">
 					<h3>Privacy Policy</h3>
-					<div class="banner-bottom-grid1 privacy1-grid">
-						<ul>
-							<li><i class="glyphicon glyphicon-user" aria-hidden="true"></i></li>
-							<li>Profile <span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-									est laborum.</span></li>
-						</ul>
-						<ul>
-							<li><i class="glyphicon glyphicon-search" aria-hidden="true"></i></li>
-							<li>Search <span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-									est laborum.</span></li>
-						</ul>
-						<ul>
-							<li><i class="glyphicon glyphicon-paste" aria-hidden="true"></i></li>
-							<li>News Feed <span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-									id est laborum.</span></li>
-						</ul>
-						<ul>
-							<li><i class="glyphicon glyphicon-qrcode" aria-hidden="true"></i></li>
-							<li>Applications <span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-									id est laborum.</span></li>
-						</ul>
-					</div>
+					<div class="banner-bottom-grid1 privacy2-grid">
+							<div class="privacy2-grid1">
+								<!-- <h4>Read Carefully</h4> -->
+								<p>
+										This privacy policy discloses the privacy practices for
+										www.ricewali.com This privacy policy applies solely to information
+										collected by this web site. It will notify you of the following: What
+										personally identifiable information is collected from you through the
+										web site, how it is used and with whom it may be shared. What
+										choices are available to you regarding the use of your data. The
+										security procedures in place to protect the misuse of your
+										information. How you can correct any inaccuracies in the
+										information. Information Collection, Use, and Sharing We are the
+										sole owners of the information collected on this site. We only have
+										access to/collect information that you voluntarily give us via email or
+										other direct contact from you. We will not sell or rent this information
+										to anyone. We will use your information to respond to you,
+										regarding the reason you contacted us. We will not share your
+										information with any third party outside of our organization, other
+										than as necessary to fulfil your request, e.g. to ship an order.
+										Unless you ask us not to, we may contact you via email in the future
+										to tell you about specials, new products or services, or changes to
+										this privacy policy. Your Access to and Control Over Information
+										You may opt out of any future contacts from us at any time. You
+										can do the following at any time by contacting us via the email
+										address or phone number given on our website:
+										• See what data we have about you, if any.
+										• Change/correct any data we have about you.
+										• Have us delete any data we have about you.
+										• Express any concern you have about our use of your data.
+										Security we take precautions to protect your information. When you
+										submit sensitive information via the website, your information is
+										protected both online and offline. Wherever we collect sensitive
+										information (such as credit card data), that information is encrypted
+										and transmitted to us in a secure way. You can verify this by looking
+										for a closed lock icon at the bottom of your web browser, or looking
+										for "https" at the beginning of the address of the web page. While
+										we use encryption to protect sensitive information transmitted
+										online, we also protect your information offline. Only employees
+										
+										who need the information to perform a specific job (for example,
+										billing or customer service) are granted access to personally
+										identifiable information. The computers/servers in which we store
+										personally identifiable information are kept in a secure environment.
+										Updates Our Privacy Policy may change from time to time and all
+										updates will be posted on this page. If you feel that we are not
+										abiding by this privacy policy, you should contact us immediately via
+										email at support@ricewali.com .
+								</p>
+								
+							</div>
+						</div>
 				</div>
 				<div class="privacy1">
 					<h3>Terms of Use</h3>
 					<div class="banner-bottom-grid1 privacy2-grid">
 						<div class="privacy2-grid1">
-							<h4>deserunt mollit anim id est laborum?</h4>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-								eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-								voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-								sequi nesciunt.</p>
+							<!-- <h4>Read Carefully</h4> -->
+							<p>Ownership of rights:    Any use of this Website or its contents, including copying or storing it or them
+									in whole or part, other than for your own personal, non-commercial use is prohibited without the
+									explicit permission of Ricewali. All information displayed, transmitted or carried on the Website is
+									protected by copyright and other intellectual property laws. Copyrights and other intellectual
+									property in respect of the some of the content on the Website may be owned by the third parties.
+									This site is designed, updated and maintained by Ricewali or its licensors. You shall not modify,
+									publish, transmit, transfer, sell, reproduce, create derivative work from, distribute, repost, perform,
+									display or in any way commercially exploit any of the content available on the Website.</p>
 							<div class="privacy2-grid1-sub">
-								<h5>1. sint occaecat cupidatat non proident, sunt</h5>
-								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h5>1. General Terms of Use:</h5>
+								<p>
+										1.0. By impliedly or expressly accepting these Terms, you also accept and agree to be bound by
+										Ricewali Policies which are amended from time to time. If you do not want to be bound by the
+										Terms, you must not subscribe to or use our services. We encourage our users to read these Terms
+										carefully while using the Website. 
+										<br>
+										1.1. User is hereby authorised to use the website for lawful purpose and for the purposes as
+										mentioned under the policies of the Ricewali , any violation to the policy will lead to strict legal
+										action against the User in terms of the policies and applicable laws.
+										<br>
+										1.2. Ricewali strives to provide best prices possible on products and services to users buying or
+										availing from the Website. However, Ricewali does not guarantee that the price will be the lowest in
+										the city, region or geography. Prices and availability are subject to change without notice or any
+										consequential liability on the Ricewali.
+										<br>
+										1.3. The headings and subheadings here in are included for convenience and identification only and
+										are not intended to describe, interpret, define or limit the scope, extent or intent of the Terms or
+										the right to use the Website by you contained here in or any other section or pages of the Website
+										or any linked sites in any manner. 
+										<br>
+										1.4. The prices displayed for each item under the promotion will be for the respective days of
+										promotion only and will not be applicable on any date prior to or after the date of promotion.
+										<br>
+										1.5. All offers on Products shall be for limited stocks and are for limited period(s). Ricewali may at its
+										sole discretion modify, extend, update or withdraw the offers on products without prior notice to
+										the Users.
+										<br>
+										1.6. Expected delivery time as mentioned on website may vary than the usual time of delivery.
+										1.7. The agreement with Ricewali can be terminated by
+										<div class="ml-5 pl-5">
+												<ul class="animi" style="margin-left: 10%;">
+													 <li> not accessing the Website </li>
+													 <li> closing Your Account, if such option has been made available to You. </li>
+												</ul>
+										</div>
+								</p>
 							</div>
 							<div class="privacy2-grid1-sub">
-								<h5>2.perspiciatis unde omnis iste natus error</h5>
-								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h5>2.0.  Eligibility to Use:</h5>
+								<p>
+										2.1. Use of the Website is available only to such persons who can legally contract under Indian Contract Act, 1872. Persons who are "incompetent to contract" within the meaning of the Indian Contract Act, 1872 including minors, un-discharged insolvents etc. shall not be eligible to use the Website.
+										<br>
+										2.2. Any minor desirous to use or transact on Website, is required to conduct such transaction through their legal guardian or parents. 
+										<br>
+										2.3. You shall not have more than one active Account (defined hereunder) on the Website. Additionally, You are prohibited from selling, trading, or otherwise transferring Your Account to another person.
+										
+								</p>
 							</div>
 							<div class="privacy2-grid1-sub">
-								<h5>3. natus error sit voluptatem accusant</h5>
-								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h5>3.0.  Account, Password, and Security:	</h5>
+								<p>
+										3.1. You may access and use the Website and the Services either as a registered user or as a guest user. However, not all sections of the Website and Services will be accessible to guest users.
+										<br>
+										3.2. If any User learns or is made or becomes aware of any instance of hacking or misuse of its User account, it shall without delay notify the Website of the same. Additionally, registered Users may be held liable for losses incurred by the Website for any loss or damage caused as a result of failure in maintaining security by the relevant User.
+										<br>
+										3.3. Guest users: The Website also allows limited access to the Services for unregistered Users (also called as 'guest users'). Such users will be able to browse the Website and use the Services for the purpose of purchasing goods, and placing orders. However, You will not be provided with access to certain benefits reserved only for the purpose of registered users. These benefits may change from time to time.
+										<br>
+										3.4. If any User provides any information that is untrue, false, not updated, and incomplete or the Website has reasonable grounds to believe that such information is untrue, false, not updated, incomplete, the Website shall have the right to suspend or terminate the relevant User account and refuse any and all current or future use of the Website.
+										
+								</p>
 							</div>
 							<div class="privacy2-grid1-sub">
-								<h5>4. occaecat cupidatat non proident, sunt in</h5>
-								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h5>4.0. Shipping and Delivery:</h5>
+								<p>
+										4.1. All Products purchased from the Website shall be delivered to the User by standard courier services by Ricewali Pvt Ltd.All deliveries where applicable shall be made on a best efforts basis, and while the Website will endeavor to deliver the Products on the dates intimated, the Website disclaims any claims or liabilities arising from any delay in this regard.The COD charge can be viewed at the time of placing the order and in all order related emails.
+										<br>
+										4.2. Ricewali.com will make a maximum of three attempts to deliver your order. In case the User is not reachable or does not accept delivery of products in these attempts the respective Seller reserves the right to cancel the order(s) at its discretion. 
+										<br>
+										4.3. An estimated delivery time shall be displayed on the order summary page. On placing your order, you will receive an email containing a summary of the order and also the estimated delivery time to your location.
+										<br>
+										4.4. Sometimes, delivery may take longer due to :
+								</p>
+								<div class="ml-5 pl-5">
+									<ol class="animi" style="margin-left: 10%;">
+										<li>bad weather</li>
+										<li>flight delays</li>
+										<li>political disruptions</li>
+										<li>other unforeseen circumstances</li>
+									</ol>
+								</div>
+								<p>
+										In such cases company is not responsible for delay in delivery.
+										<br>
+										4.5. The Website shall not be held responsible and will bear no liability in case of failure or delay of delivering the Products including any damage or loss caused to the Products. 
+										<br>
+										4.6. Where there is a likelihood of delay in delivery of the Products, the User may be notified of the same from time to time. However, no refunds may be claimed by the User for any delay in delivery of the Products, which was caused due to reasons beyond the control of the Website and/or the Seller.
+										<br>
+										4.7. However in case where a damage has been caused to the Products ordered, the Seller shall replace the products as per the Seller’s replacement policy as may be indicated on the Website along with the Product.
+										<br>
+										4.8. No deliveries of the Products shall be made outside the territorial boundaries of India.
+										<br>
+										4.9. If a User wishes to get delivery to different addresses, then the User shall be required to purchase the Products under separate transactions and provide separate delivery addresses for each transaction, as may be required. The User agrees that the delivery can be made to the person who is present at the shipping address provided by the User.
+										<br>
+										4.10. Ricewali.com shall not compensate for any mental agony caused due to delay in delivery. The Users can cancel the order at any moment of time even if the delivery time exceeds the expected delivery time. If it is a prepaid order, the Users will be refunded back the price of the product in the account or payment wallet, in accordance with the options chosen by you, as soon as the order is successfully cancelled.
+										
+								</p>
 							</div>
 							<div class="privacy2-grid1-sub">
-								<h5>5. deserunt mollit anim id est laborum</h5>
-								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<h5>5.0. Return, Replacement and Refund:</h5>
+								<p>
+									5.1. All Products ordered from the Website and successfully delivered to the User may be returned in accordance with the terms contained in the respective Seller policy.
+									<br>
+									5.2. However no Products will be accepted by the Seller if 
+								</p>
+								<div class="ml-5 pl-5">
+										<ol class="animi" style="margin-left: 10%;">
+											<li>the Products have been damaged by the User</li>
+											<li>if there is a change in the quality, quantity or other characteristics of the Product</li>
+											<li>if as per the Seller the product returned is not the Product that was delivered</li>
+											<li> any other circumstances that the Website and/or the Seller may notify or deem appropriate from time to time</li>
+										</ol>
+								</div>
+								<p>
+									5.3. In case of returns:
+								</p>
+								<div class="ml-5 pl-5">
+										<ol class="animi" style="margin-left: 10%;">
+											<li>Return/size exchange should be initiated within 15 days of order delivery.</li>
+											<li>  The tags on the product should be intact</li>
+											<li>The product should be unwashed, unused and in an undamaged condition.</li>
+											<li>The item needs to be returned along with the original packaging.</li>
+										</ol>
+								</div>
+								<p>
+										5.4. In case of return initiated and subsequently couriered by the User himself/herself, and if it is found that the claimed shipment was not delivered to Ricewali.com or the shipment was empty, the onus shall be on the User to prove through presentation/submission of Proof of Delivery (PoD) from the concerned logistic service provider to establish his/her claim of return. However, non-receipt of Product by the Seller or Ricewali may lead to no refund/exchange being issued to the User. 
+										<br>\
+										5.5. Ricewali.com will not be liable for the products returned by mistake. In circumstances where a product not belonging to Ricewali.com is returned by mistake, Ricewali.com is not accountable for misplacement or replacement of the product and is not responsible for its delivery back to the User.
+										<br>
+										5.6. All Products ordered by the User shall be eligible to be replaced in accordance with the Seller’s replacement policy as indicated here in above, if the Product delivered is damaged, soiled or is different from the Product specifications mentioned on the Website. Ricewali.com will accept return or size exchange of a Product only in accordance with the returns policy of the respective Seller.
+										<br>
+										5.7. Refund, if any, shall be made at the same issuing bank through which the Product was purchased. For cash on delivery transactions, the User has the option to receive the refund in any bank account via NEFT (for which the User shall have to share the bank details) or, the refund will be credited to the wallet linked to his/her User account on the Website.
+										<br>
+										5.8. For payments made through electronic means like debit card, credit card, net banking, wallet etc. refund shall be made using the same payment mode.
+										<br>
+										5.9. All refunds shall be made in Indian Rupees only.
+										<br>
+										5.10. The User acknowledges that the Website will not be liable for any damages, interests or claims etc  resulting from non-processing an order or any delay in processing an order which is beyond control of the Website.
+										<br>
+										5.11. All Users and Sellers shall comply with all the applicable laws (including without limitation Foreign Exchange Management Act, 1999 and the rules made there under, Customs Act, Information and Technology Act, 2000 as amended by the Information Technology (Amendment) Act 2008, Prevention of Money Laundering Act, 2002 and the rules made there under, Foreign Contribution Regulation Act, 1976 and the rules made there under, Income Tax Act, 1961 and the rules made there under and all other laws as may be applicable.
+										
+								</p>
 							</div>
 						</div>
 					</div>
