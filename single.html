@@ -2,7 +2,9 @@
 <html>
 
 <head>
-	<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
+	<title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Single ::
+		w3layouts</title>
+
 	<!-- for-mobile-apps -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,48 +13,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- //for-mobile-apps -->
+
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- font-awesome icons -->
 	<link href="static/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- js -->
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="render.js"></script>
-	<script src="js/single_product.js"></script>
-	<script src='js/okzoom.js'></script>
-	<script>
-		$(function () {
-			$('#example').okzoom({
-				width: 150,
-				height: 150,
-				border: "1px solid black",
-				shadow: "0 0 5px #000"
-			});
-		});
-	</script>
-	<!-- start-smoth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		var data;
-		window.onpaint = function () {
-			console.log("-> ", render_data)
-		}
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-			});
-		});
-	</script>
-	<!-- start-smoth-scrolling -->
+
+	<script src="static/jquery-1.11.1.min.js"></script>
 </head>
 
 <body>
 	<!-- header -->
 	<div class="agileits_header">
 		<div class="w3l_offers">
-			<a href="products.html">RiceWal!</a>
+			<a href=".">RiceWali</a>
 		</div>
 		<div class="w3l_header_right1 px-5">
 			<div class="dropdown profile_details_drop">
@@ -127,7 +101,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>Single Page</li>
+				<li>Product Page</li>
 			</ul>
 		</div>
 	</div>
@@ -148,23 +122,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+						<li>
+							<a class="" data-toggle="collapse" href="#collapseCategories" role="button" aria-expanded="false" aria-controls="collapseCategories">Categories
+							</a>
+							<div class="collapse" id="collapseCategories">
 								<div class="w3ls_vegetables">
-									<ul class="nav-dropdown">
-										<li><a href="">Basmati Rice</a></li>
-										<li><a href="">Boiled Rice</a></li>
-										<li><a href="">BPT</a></li>
-										<li><a href="">Broken Rice</a></li>
-										<li><a href="">Brown Rice</a></li>
-										<li><a href="">HMT Rice</a></li>
-										<li><a href="">Jai Srhiram Rice</a></li>
-										<li><a href="">Korra Rice</a></li>
-										<li><a href="">Kurnool Sona MAsuri</a></li>
-										<li><a href="">Steam Rice</a></li>
-										<li><a href="">White Ponni</a></li>
+									<ul>
+										<li> <a href="single.html?basmati" class="col-12">Basmati Rice</a></li>
+										<li> <a href="single.html?boiled rice" class=" col-12">Boiled Rice</a></li>
+										<li> <a href="single.html?bpt" class="col-12">BPT</a></li>
+										<li> <a href="single.html?broken rice" class="col-12">Broken Rice</a></li>
+										<li> <a href="single.html?brown rice" class="col-12">Brown Rice</a></li>
+										<li> <a href="single.html?hmt rice" class="col-12">HMT Rice</a></li>
+										<li> <a href="single.html?jai srhiram rice" class="col-12">Jai Srhiram Rice</a></li>
+										<li> <a href="single.html?korra rice" class="col-12">Korra Rice</a></li>
+										<li> <a href="single.html?kurnool sona masuri" class="col-12">Kurnool Sona MAsuri</a></li>
+										<li> <a href="single.html?steam rice" class="col-12">Steam Rice</a></li>
+										<li> <a href="single.html?white ponni" class="col-12">White Ponni</a></li>
 									</ul>
 								</div>
 							</div>
@@ -183,33 +157,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="agileinfo_single">
 				<h5 id="p_title"></h5>
 				<div class="col-md-4 agileinfo_single_left">
-					<img id="p_img" src="images/76.png" alt=" " class="img-responsive" />
+					<img id="p_img" src="static/assets/images/76.png" alt=" " class="img-responsive" />
 				</div>
 				<div class="col-md-8 agileinfo_single_right">
-					<div class="rating1">
-						<span class="starRating">
-							<input id="rating5" type="radio" name="rating" value="5">
-							<label for="rating5">5</label>
-							<input id="rating4" type="radio" name="rating" value="4">
-							<label for="rating4">4</label>
-							<input id="rating3" type="radio" name="rating" value="3" checked>
-							<label for="rating3">3</label>
-							<input id="rating2" type="radio" name="rating" value="2">
-							<label for="rating2">2</label>
-							<input id="rating1" type="radio" name="rating" value="1">
-							<label for="rating1">1</label>
-						</span>
-					</div>
 					<div class="w3agile_description">
 						<h4>Description :</h4>
-						<p id="p_desc">Basmati is a variety of long, slender-grained aromatic rice which is traditionally from the Indian subcontinent.
-							These long and slender grains are known for their distinct aroma and are native to the Indian subcontinent. It is
-							commonly used for making royal biryanis but there's a lot more that you can do with Basmati rice. If you haven't experimented
-							with it yet, here are our 10 best Basmati rice recipes to try.</p>
+						<p id="p_desc">
+							<!-- Product Description -->
+						</p>
 					</div>
 					<div class="snipcart-item block">
 						<div class="snipcart-thumb agileinfo_single_right_snipcart">
-							<h4 id="p_price">₹1500 <span>₹1800</span></h4>
+							<h4 id="p_price" class="my_2">
+								<!--product price-->
+							</h4>
+							<h4 id="p_mprice" class="my_2">
+								<!--product price-->
+							</h4>
 						</div>
 						<div class="snipcart-details agileinfo_single_right_details">
 							<form action="#" method="post">
@@ -249,22 +213,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-9 w3l_fresh_vegetables_grid_right">
 					<div class="col-md-4 w3l_fresh_vegetables_grid">
 						<div class="w3l_fresh_vegetables_grid1">
-							<img src="images/8.jpg" alt=" " class="img-responsive" />
+							<img src="static/assets/images/8.jpg" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="col-md-4 w3l_fresh_vegetables_grid">
 						<div class="w3l_fresh_vegetables_grid1">
 							<div class="w3l_fresh_vegetables_grid1_rel">
-								<img src="images/7.jpg" alt=" " class="img-responsive" />
+								<img src="static/assets/images/7.jpg" alt=" " class="img-responsive" />
 								<div class="w3l_fresh_vegetables_grid1_rel_pos">
 									<div class="more m1">
-										<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+										<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop
+											now</a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="w3l_fresh_vegetables_grid1_bottom">
-							<img src="images/10.jpg" alt=" " class="img-responsive" />
+							<img src="static/assets/images/10.jpg" alt=" " class="img-responsive" />
 							<div class="w3l_fresh_vegetables_grid1_bottom_pos">
 								<h5>Special Offers</h5>
 							</div>
@@ -272,10 +237,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="col-md-4 w3l_fresh_vegetables_grid">
 						<div class="w3l_fresh_vegetables_grid1">
-							<img src="images/9.jpg" alt=" " class="img-responsive" />
+							<img src="static/assets/images/9.jpg" alt=" " class="img-responsive" />
 						</div>
 						<div class="w3l_fresh_vegetables_grid1_bottom">
-							<img src="images/11.jpg" alt=" " class="img-responsive" />
+							<img src="static/assets/images/11.jpg" alt=" " class="img-responsive" />
 						</div>
 					</div>
 					<div class="clearfix"> </div>
@@ -294,260 +259,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h3>Popular Brands</h3>
 			<div class="w3ls_w3l_banner_nav_right_grid1">
-				<h6>Basmati Brands</h6>
-				<div class="col-md-3 w3ls_w3l_banner_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/5.png" alt=" " class="img-responsive" /></a>
-											<p>knorr instant soup (100 gm)</p>
-											<h4>$3.00 <span>$5.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="knorr instant soup" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 w3ls_w3l_banner_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/6.png" alt=" " class="img-responsive" /></a>
-											<p>chings noodles (75 gm)</p>
-											<h4>$5.00 <span>$8.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="chings noodles" />
-													<input type="hidden" name="amount" value="5.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 w3ls_w3l_banner_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/7.png" alt=" " class="img-responsive" /></a>
-											<p>lahsun sev (150 gm)</p>
-											<h4>$3.00 <span>$5.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 w3ls_w3l_banner_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/8.png" alt=" " class="img-responsive" /></a>
-											<p>premium bake rusk (300 gm)</p>
-											<h4>$5.00 <span>$7.00</span></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="premium bake rusk" />
-													<input type="hidden" name="amount" value="5.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
+				<!-- Here the template gets loaded.. -->
+				<div class="container" id="products_pane"></div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
 	<!-- //brands -->
-	<!-- newsletter -->
-	<div class="newsletter">
-		<div class="container">
-			<div class="w3agile_newsletter_left">
-				<h3> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Request a call back</h3>
-			</div>
-			<div class="w3agile_newsletter_right">
-				<form action="#" method="post">
-					<input type="email" name="Email" value="Phone number" onfocus="this.value = '';" required>
-					<input type="submit" value="submit">
-				</form>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!-- //newsletter -->
 	<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="col-md-3 w3_footer_grid">
-				<h3>information</h3>
-				<ul class="w3_footer_grid_list">
-					<li><a href="events.html">Best Deals</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="services.html">Services</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 w3_footer_grid">
-				<h3>policy info</h3>
-				<ul class="w3_footer_grid_list">
-					<li><a href="faqs.html">FAQ</a></li>
-					<li><a href="privacy.html">privacy policy</a></li>
-					<li><a href="privacy.html">terms of use</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 w3_footer_grid">
-				<h3>what we are into</h3>
-				<ul class="w3_footer_grid_list">
-					<li><a>Rice for hostels</a></li>
-					<li><a>Bulk orders</a></li>
-					<li><a>Best quality rice for hotels</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 w3_footer_grid">
-				<h3>connect with us</h3>
-				<ul class="w3_footer_grid_list">
-					<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i> ricewali | Facebook.com</a></li>
-					<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i> ricewali | Twitter</a></li>
-					<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i> ricewali | Google+</a></li>
-					<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> ricewali | instagram</a></li>
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-			<div class="agile_footer_grids">
-				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
-					<div class="w3_footer_grid_bottom">
-						<h4>100% secure payments</h4>
-						<ul class="agileits_social_icons">
-							<li><a class="facebook"><i class="fa fa-paypal" aria-hidden="true"></i></a></li>
-							<li><a class="twitter"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
-							<li><a class="google"><i class="fa fa-google-wallet" aria-hidden="true"></i></a></li>
-							<li><a class="instagram"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a></li>
-							<li><a class="dribbble"><i class="fa fa-credit-card" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //footer -->
+	<div id="footer_pane"></div>
 	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="static/bootstrap.min.js"></script><!-- js -->
+	<script src="render.js"></script>
+	<script src="js/render_products.js"></script>
+	<script src="js/single_product.js"></script>
+	<script src="static/d3.v4.min.js"></script>
+	<script src='js/okzoom.js'></script>
+	<script src="js/templates/footer_template.js"></script>
+	<!-- Render templates here.. -->
 	<script>
-		$(document).ready(function () {
-			$(".dropdown").hover(
-				function () {
-					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
-					$(this).toggleClass('open');
-				},
-				function () {
-					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
-					$(this).toggleClass('open');
-				}
-			);
+		render_footer_template()
+	</script>
+	<script>
+		$(function () {
+			$('#example').okzoom({
+				width: 150,
+				height: 150,
+				border: "1px solid black",
+				shadow: "0 0 5px #000"
+			});
 		});
 	</script>
-	<!-- here stars scrolling icon -->
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function () {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-
-			$().UItoTop({ easingType: 'easeOutQuart' });
-
+		var data;
+		window.onpaint = function () {
+			console.log("-> ", render_data)
+		}
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
 		});
 	</script>
-	<!-- //here ends scrolling icon -->
+	<!-- start-smoth-scrolling -->
+
+	<!-- Cart functions -->
 	<script src="js/minicart.js"></script>
 	<script>
 		paypal.minicart.render();
@@ -570,6 +330,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 
 	</script>
+	<!-- // Cart functions -->
 </body>
 
 </html>

@@ -22,7 +22,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="static/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" /> 
 <!-- //font-awesome icons -->
 <!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script>
+<script src="static/jquery-1.11.1.min.js"></script>
 <!-- //js -->
  <script src='js/okzoom.js'></script>
   <script>
@@ -41,7 +41,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
     // $('#modal_content_data').on('template', function () {})
-    $('#header_template').on('template', function(){});
+    $('#header_template').template({
+  data: header_template
+  });
+
+$('.explorecontent').template({
+  data: explore_cards
+})
+
 		$(".scroll").click(function(event){		
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
@@ -58,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 	
 <body>
-   <!-- <script id="header_template"  type="text/template" src="header_template.html"></script>-->
+   <script id="header_template"  type="text/template" src="header_template.html"></script>
     <!-- <script>
      $(document).ready(function(){
        alert($(this).html("<h1>Helloworld</h1>"));
