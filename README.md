@@ -22,11 +22,12 @@ Some basic Git commands are:
 
 
 ## Tasks / work in progress
-- [ ] Delete all unecessry files after using them
-- [ ] login.html edited, need to adjust heading.
-- [ ] Render Header & Footer from a template
-- [ ] Need to Update Terms n Conditions
-- [ ] Create seperate file for t&c 
+- [x] Delete all unecessry files after using them
+- [x] login.html edited, need to adjust heading.
+- [ ] Render Header from a template
+- [x] Render Footer from a template
+- [x] Need to Update Terms n Conditions
+- [x] Create seperate file for t&c 
 - [ ] Logo need to be added in header
 - [ ] Connect site with sheets 
 

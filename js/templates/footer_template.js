@@ -3,16 +3,18 @@ function render_footer_template() {
     `
 	<!-- newsletter -->
 	<div class="newsletter">
-		<div class="container">
-			<div class="w3agile_newsletter_left">
-				<h3> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Request a call back</h3>
+		<div class="container align-center text-center">
+			<div class="w3agile_newsletter">
+				<h3><a href="callback.html" style="text-decoration: none; color: white;"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; Request a call back</a></h3>
 			</div>
+			<!--
 			<div class="w3agile_newsletter_right">
 				<form action="#" method="post">
 					<input type="email" name="Email" value="Phone number" onfocus="this.value = '';" required>
 					<input type="submit" value="submit">
 				</form>
 			</div>
+			-->
 			<div class="clearfix"> </div>
 		</div>
     </div>

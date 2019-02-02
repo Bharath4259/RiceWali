@@ -35,13 +35,15 @@
 
 <body>
 	<!-- header -->
-	<div class="agileits_header">
+	<div class="agileits_header fixed">
 		<div class="w3l_offers">
-			<a href=".">RiceWal!</a>
+			<a href=".">RiceWali</a>
 		</div>
 
+		<!--COMMENTING THIS CODE TEMPORORILY AND MOVING THIS TO TEMPLATE-->
 		<div class="w3l_header_right1 px-5">
 			<div class="dropdown profile_details_drop">
+				<!--
 				<a href="" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
 				<div class="mega-dropdown-menu">
 					<div class="w3ls_vegetables">
@@ -51,30 +53,19 @@
 						</ul>
 					</div>
 				</div>
+				-->
 			</div>
 		</div>
-
+		<!--
 		<div class="w3l_header_right1 px-5">
 			<div class="dropdown profile_details_drop">
 				<a href="checkout.html"><i class='fa fa-shopping-cart' aria-hidden='true'></i></a>
 			</div>
 		</div>
+		-->
 	</div>
 	<!-- script-for sticky-nav -->
-	<script>
-		$(document).ready(function () {
-			var navoffeset = $(".agileits_header").offset().top;
-			$(window).scroll(function () {
-				var scrollpos = $(window).scrollTop();
-				if (scrollpos >= navoffeset) {
-					$(".agileits_header").addClass("fixed");
-				} else {
-					$(".agileits_header").removeClass("fixed");
-				}
-			});
 
-		});
-	</script>
 	<div class="logo_products">
 		<div class="container-fluid">
 			<div class="row">
@@ -95,7 +86,7 @@
 				<div class="col-4 col-md-4 col-xl-4">
 					<div class="w3ls_logo_products_left1">
 						<ul class="phone_email">
-							<li><i class="fa fa-phone" aria-hidden="true"></i>(+91) 912 345 6789</li>
+							<li><i class="fa fa-phone" aria-hidden="true"></i>(+91) 90 XXX XXX 09</li>
 							<li><i class="fa fa-envelope-o" aria-hidden="true"></i>
 								<a href="services@ricewali.com">services@ricewali.com</a>
 							</li>
@@ -143,9 +134,9 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="products.html">Try A Sample</a></li>
+						<li><a href=".">Try A Sample</a></li>
 						<li><a href="about.html">Why US?</a></li>
-						<li><a href="contactus.html">Contact US</a></li>
+						<li><a href="contact.html">Contact US</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</nav>
@@ -238,7 +229,7 @@
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="static/bootstrap.min.js"></script>
-	<script src="render.js"></script>
+	<script src="static/assets/render.js"></script>
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script defer src="static/jquery.flexslider.js"></script>

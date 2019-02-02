@@ -35,45 +35,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 	<!-- header -->
-	<div class="agileits_header">
+	<div class="agileits_header fixed">
 		<div class="w3l_offers">
-			<a href="index.html">RiceWal!</a>
+			<a href="index.html">RiceWali</a>
 		</div>
 		<div class="w3l_header_right1 px-5">
 			<div class="dropdown profile_details_drop">
-				<a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
-				<div class="mega-dropdown-menu">
-					<div class="w3ls_vegetables">
-						<ul class="dropdown-menu drp-mnu">
-							<li><a href="login.html">Login</a></li>
-							<li><a href="login.html">Sign Up</a></li>
-						</ul>
+				<!--
+					<a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu">
+								<li><a href="login.html">Login</a></li>
+								<li><a href="login.html">Sign Up</a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
+					-->
 			</div>
 		</div>
 		<div class="w3l_header_right1 px-5">
 			<div class="dropdown profile_details_drop">
-				<a href="checkout.html"><i class='fa fa-shopping-cart' aria-hidden='true'></i></a>
+				<!-- <a href="checkout.html"><i class='fa fa-shopping-cart' aria-hidden='true'></i></a> -->
 			</div>
 		</div>
 	</div>
-
-	<!-- script-for sticky-nav -->
-	<script>
-		$(document).ready(function () {
-			var navoffeset = $(".agileits_header").offset().top;
-			$(window).scroll(function () {
-				var scrollpos = $(window).scrollTop();
-				if (scrollpos >= navoffeset) {
-					$(".agileits_header").addClass("fixed");
-				} else {
-					$(".agileits_header").removeClass("fixed");
-				}
-			});
-		});
-	</script>
-	<!-- //script-for sticky-nav -->
 
 	<div class="mt-10 mb-10"></div>
 	<!-- //header -->
@@ -86,7 +72,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="w3ls_service_grids">
 					<div class="col-md-5 w3ls_service_grid_left">
 						<h4>cum soluta nobis est</h4>
-						<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut
+						<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur
+							aut
 							perferendis doloribus asperiores repellat.
 						</p>
 					</div>
