@@ -24,6 +24,7 @@ $( document ).ready(function() {
 $(document).ready(function () {
     d3.csv("static/assets/products_data.csv", function(data){
         console.log("d3data > ", data);
+        // if(data.length == 0)
         $.map(data, function(item){
             if(item.prod_category === product_category)
                 render_product(item)
@@ -35,7 +36,7 @@ function render(product_data){
     $("#p_title").text(product_data.title)
     $("#p_img").attr("src", product_data.image)
     $("#p_desc").text(product_data.desc)
-    $("#p_price").html("Avg price on our site &nbsp; ₹" + product_data.price )
+    $("#p_price").html("Price on our site &nbsp; ₹" + product_data.price )
     $("#p_mprice").html("Avg price in Market &nbsp;&nbsp;&nbsp; ₹" + product_data.mprice )
     $("#p_abt_ttle").text("More About " + product_data.title)
     $.each(product_data.specs, function(i, v){
